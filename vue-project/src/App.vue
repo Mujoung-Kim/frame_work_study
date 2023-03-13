@@ -1,7 +1,28 @@
 <template>
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="about">About</router-link> |
+    <router-link to="DataBinding">DataBinding</router-link> |
+    <router-link to="DataBindingHtml">HtmlBinding</router-link> |
+    <router-link to="DataBindingText">BindingInputText</router-link> |
+    <router-link to="DataBindingNumber">BindingInputNumber</router-link> |
+    <router-link to="DataBindingTextarea">BindingInputTextarea</router-link> |
+    <router-link to="DataBindingSelect">BindingSelect</router-link> |
+    <router-link to="DataBindingCheckBox">BindingCheckBox</router-link> |
+    <router-link to="DataBindingCheckBox2">BindingCheckBox2</router-link> |
+    <router-link to="DataBindingRadio">BindingRadio</router-link> |
+    <router-link to="DataBindingImg">BindingImg</router-link> |
+    <router-link to="DataBindingButton">BindingButton</router-link> |
+    <router-link to="DataBindingClass">BindingClass</router-link> |
+    <router-link to="DataBindingClass2">BindingClass2</router-link> |
+    <router-link to="DataBindingStyle">BindingStyle</router-link> |
+    <router-link to="DataBindingList">BindingList</router-link> |
+    <router-link to="DataBindingIf">BindingIf</router-link> |
+    <router-link to="EventClick">EventClick</router-link> |
+    <router-link to="EventChange">EventChange</router-link> |
+    <router-link to="EventComputed">EventComputed</router-link> |
+    <router-link to="EventWatch">EventWatch</router-link> |
+    <router-link to="EventWatch2">EventWatch2</router-link>
   </nav>
   <router-view/>
 </template>
