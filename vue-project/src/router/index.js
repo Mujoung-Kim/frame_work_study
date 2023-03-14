@@ -129,6 +129,46 @@ const routes = [
     path: '/test_event',
     name: 'test_event',
     component: () => import(/* webpachChunkName: "test_event"*/ '../views/basic/event/test_event.vue')
+  },
+  {
+    path: '/NestedComponent',
+    name: 'NestedComponent',
+    component: () => import(/* webpachChunkName: "NestedComponent"*/ '../views/basic/components/NestedComponent.vue')
+  },
+  {
+    path: '/ParentComponent',
+    name: 'ParentComponent',
+    component: () => import(/* webpachChunkName: "ParentComponent"*/ '../views/basic/components/ParentComponent.vue')
+  },
+  {
+    path: '/ParentComponent2',
+    name: 'ParentComponent2',
+    component: () => import(/* webpachChunkName: "ParentComponent2"*/ '../views/basic/components/ParentComponent2.vue')
+  },
+  {
+    path: '/ParentComponent3',
+    name: 'ParentComponent3',
+    component: () => import(/* webpachChunkName: "ParentComponent3"*/ '../views/basic/components/ParentComponent3.vue')
+  },
+  {
+    path: '/ParentComponent4',
+    name: 'ParentComponent4',
+    component: () => import(/* webpachChunkName: "ParentComponent4"*/ '../views/basic/components/ParentComponent4.vue')
+  },
+  {
+    path: '/ParentComponent5',
+    name: 'ParentComponent5',
+    component: () => import(/* webpachChunkName: "ParentComponent5"*/ '../views/basic/components/ParentComponent5.vue')
+  },
+  {
+    path: '/SlotUseModalLayout',
+    name: 'SlotUseModalLayout',
+    component: () => import(/* webpachChunkName: "SlotUseModalLayout"*/ '../views/basic/components/SlotUseModalLayout.vue')
+  },
+  {
+    path: '/ProvideInject',
+    name: 'ProvideInject',
+    component: () => import(/* webpachChunkName: "ProvideInject"*/ '../views/basic/components/ProvideInject.vue')
   }
 ]
 

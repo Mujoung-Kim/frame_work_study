@@ -24,7 +24,15 @@
     <router-link to="EventComputed">EventComputed</router-link> |
     <router-link to="EventWatch">EventWatch</router-link> |
     <router-link to="EventWatch2">EventWatch2</router-link> |
-    <router-link to="test_event">TestEvent</router-link>
+    <router-link to="test_event">TestEvent</router-link> |
+    <router-link to="NestedComponent">PageTitle</router-link> |
+    <router-link to="ParentComponent">ParentComponent</router-link> |
+    <router-link to="ParentComponent2">ParentComponent2</router-link> |
+    <router-link to="ParentComponent3">ParentComponent3</router-link> |
+    <router-link to="ParentComponent4">ParentComponent4</router-link> |
+    <router-link to="ParentComponent5">ParentComponent5</router-link> |
+    <router-link to="SlotUseModalLayout">SlotUseModalLayout</router-link> |
+    <router-link to="ProvideInject">ProvideInject</router-link>
   </nav>
   <router-view/>
 </template>
