@@ -91,6 +91,11 @@ const routes = [
     component: () => import(/* webpachChunkName: "DataBindingList"*/ '../views/basic/binding/DataBindingList.vue')
   },
   {
+    path: '/DataBindingList2',
+    name: 'DataBindingList2',
+    component: () => import(/* webpachChunkName: "DataBindingList2"*/ '../views/basic/binding/DataBindingList2.vue')
+  },
+  {
     path: '/DataBindingIf',
     name: 'DataBindingIf',
     component: () => import(/* webpachChunkName: "DataBindingIf"*/ '../views/basic/binding/DataBindingIf.vue')
@@ -119,6 +124,11 @@ const routes = [
     path: '/EventWatch2',
     name: 'EventWatch2',
     component: () => import(/* webpachChunkName: "EventWatch2"*/ '../views/basic/event/EventWatch2.vue')
+  },
+  {
+    path: '/test_event',
+    name: 'test_event',
+    component: () => import(/* webpachChunkName: "test_event"*/ '../views/basic/event/test_event.vue')
   }
 ]
 

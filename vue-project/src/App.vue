@@ -17,12 +17,14 @@
     <router-link to="DataBindingClass2">BindingClass2</router-link> |
     <router-link to="DataBindingStyle">BindingStyle</router-link> |
     <router-link to="DataBindingList">BindingList</router-link> |
+    <router-link to="DataBindingList2">BindingList2</router-link> |
     <router-link to="DataBindingIf">BindingIf</router-link> |
     <router-link to="EventClick">EventClick</router-link> |
     <router-link to="EventChange">EventChange</router-link> |
     <router-link to="EventComputed">EventComputed</router-link> |
     <router-link to="EventWatch">EventWatch</router-link> |
-    <router-link to="EventWatch2">EventWatch2</router-link>
+    <router-link to="EventWatch2">EventWatch2</router-link> |
+    <router-link to="test_event">TestEvent</router-link>
   </nav>
   <router-view/>
 </template>
