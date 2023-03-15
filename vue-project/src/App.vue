@@ -42,6 +42,7 @@
     <router-link to="CompositionApiProvide">CompositionApiProvide</router-link> |
     <router-link to="MixinsView">MixinsView</router-link> |
     <router-link to="CustomDirective">CustomDirective</router-link> |
+    <router-link to="StoreAccess">StoreAccess</router-link> |
   </nav>
   <router-view/>
 </template>

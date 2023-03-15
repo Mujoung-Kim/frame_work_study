@@ -214,6 +214,11 @@ const routes = [
     path: '/CustomDirective',
     name: 'CustomDirective',
     component: () => import(/* webpachChunkName: "CustomDirective"*/ '../views/basic/composition/CustomDirective.vue')
+  },
+  {
+    path: '/StoreAccess',
+    name: 'StoreAccess',
+    component: () => import(/* webpachChunkName: "StoreAccess"*/ '../views/basic/vuex/StoreAccess.vue')
   }
 ]
 
