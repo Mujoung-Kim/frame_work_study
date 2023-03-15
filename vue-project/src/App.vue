@@ -32,7 +32,16 @@
     <router-link to="ParentComponent4">ParentComponent4</router-link> |
     <router-link to="ParentComponent5">ParentComponent5</router-link> |
     <router-link to="SlotUseModalLayout">SlotUseModalLayout</router-link> |
-    <router-link to="ProvideInject">ProvideInject</router-link>
+    <router-link to="ProvideInject">ProvideInject</router-link> |
+    <router-link to="TestComponents">TestComponent</router-link> |
+    <router-link to="CalculatorView">Calculator</router-link> |
+    <router-link to="CompositionApi">CompositionApi</router-link> |
+    <router-link to="CompositionApi2">CompositionApi2</router-link> |
+    <router-link to="CompositionApi3">CompositionApi3</router-link> |
+    <router-link to="CompositionApi4">CompositionApi4</router-link> |
+    <router-link to="CompositionApiProvide">CompositionApiProvide</router-link> |
+    <router-link to="MixinsView">MixinsView</router-link> |
+    <router-link to="CustomDirective">CustomDirective</router-link> |
   </nav>
   <router-view/>
 </template>

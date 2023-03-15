@@ -169,6 +169,51 @@ const routes = [
     path: '/ProvideInject',
     name: 'ProvideInject',
     component: () => import(/* webpachChunkName: "ProvideInject"*/ '../views/basic/components/ProvideInject.vue')
+  },
+  {
+    path: '/TestComponents',
+    name: 'TestComponents',
+    component: () => import(/* webpachChunkName: "TestComponents"*/ '../views/basic/components/TestComponents.vue')
+  },
+  {
+    path: '/CalculatorView',
+    name: 'CalculatorView',
+    component: () => import(/* webpachChunkName: "CalculatorView"*/ '../views/basic/composition/CalculatorView.vue')
+  },
+  {
+    path: '/CompositionApi',
+    name: 'CompositionApi',
+    component: () => import(/* webpachChunkName: "CompositionApi"*/ '../views/basic/composition/CompositionApi.vue')
+  },
+  {
+    path: '/CompositionApi2',
+    name: 'CompositionApi2',
+    component: () => import(/* webpachChunkName: "CompositionApi2"*/ '../views/basic/composition/CompositionApi2.vue')
+  },
+  {
+    path: '/CompositionApi3',
+    name: 'CompositionApi3',
+    component: () => import(/* webpachChunkName: "CompositionApi3"*/ '../views/basic/composition/CompositionApi3.vue')
+  },
+  {
+    path: '/CompositionApi4',
+    name: 'CompositionApi4',
+    component: () => import(/* webpachChunkName: "CompositionApi4"*/ '../views/basic/composition/CompositionApi4.vue')
+  },
+  {
+    path: '/CompositionApiProvide',
+    name: 'CompositionApiProvide',
+    component: () => import(/* webpachChunkName: "CompositionApiProvide"*/ '../views/basic/composition/CompositionApiProvide.vue')
+  },
+  {
+    path: '/MixinsView',
+    name: 'MixinsView',
+    component: () => import(/* webpachChunkName: "MixinsView"*/ '../views/basic/composition/MixinsView.vue')
+  },
+  {
+    path: '/CustomDirective',
+    name: 'CustomDirective',
+    component: () => import(/* webpachChunkName: "CustomDirective"*/ '../views/basic/composition/CustomDirective.vue')
   }
 ]
 
