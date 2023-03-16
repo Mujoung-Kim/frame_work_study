@@ -13,11 +13,11 @@ module.exports = {
   },
 
   devServer: {
-    port: 8080,
+    // port: 8080,
     proxy: {
-      '^/api': {
-        target,
-        changeOrigin: true,
+      '/oauth2.0': {
+        target: "https://nid.naver.com",
+        // changeOrigin: true,
       }
     }
   }

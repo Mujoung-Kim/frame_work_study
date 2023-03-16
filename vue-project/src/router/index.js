@@ -219,6 +219,16 @@ const routes = [
     path: '/StoreAccess',
     name: 'StoreAccess',
     component: () => import(/* webpachChunkName: "StoreAccess"*/ '../views/basic/vuex/StoreAccess.vue')
+  },
+  {
+    path: '/KakaoLogin',
+    name: 'KakaoLogin',
+    component: () => import(/* webpachChunkName: "KakaoLogin"*/ '../views/basic/vuex/KakaoLogin.vue')
+  },
+  {
+    path: '/NaverLogin',
+    name: 'NaverLogin',
+    component: () => import(/* webpachChunkName: "NaverLogin"*/ '../views/basic/vuex/NaverLogin.vue')
   }
 ]
 

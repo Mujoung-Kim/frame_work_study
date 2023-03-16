@@ -43,6 +43,8 @@
     <router-link to="MixinsView">MixinsView</router-link> |
     <router-link to="CustomDirective">CustomDirective</router-link> |
     <router-link to="StoreAccess">StoreAccess</router-link> |
+    <router-link to="KakaoLogin">KakaoLogin</router-link> |
+    <router-link to="NaverLogin">NaverLogin</router-link> |
   </nav>
   <router-view/>
 </template>
