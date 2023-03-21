@@ -3,6 +3,13 @@ const app = express();
 const session = require('express-session');
 const fs = require('fs');
 
+var moviesRouter = require('./routes/movies')
+
+// read to .env.local 
+const path = require('path')
+
+require('dotenv').config({ path: path.resolve(__dirname, '../.env.local') })
+
 app.use(session({
   secret: 'secret code',
   resave: false,
@@ -12,14 +19,15 @@ app.use(session({
     maxAge: 1000 * 60 * 60 //쿠기 유효시간 1시간
   }
 }));
+app.use('/movies', moviesRouter)
 
 app.use(express.json({
   limit: '50mb'
 }));
 
-// const server = app.listen(3000, () => {
-//   console.log('Server started. port 3000.');
-// });
+const server = app.listen(3000, () => {
+  console.log('Server started. port 3000.');
+});
 
 let sql = require('./sql.js');
 
@@ -30,11 +38,12 @@ fs.watchFile(__dirname + '/sql.js', (curr, prev) => {
 });
 
 const db = {
-  database: "dev_class",
+  database: process.env.VUE_APP_DB_NAME,
   connectionLimit: 10,
-  host: "http://127.0.0.1:3306",
+  host: process.env.VUE_APP_HOST,
+  port: process.env.VUE_APP_DB_PORT,
   user: "root",
-  password: "mysql"
+  password: process.env.VUE_APP_DB_PASSWORD
 };
 
 const dbPool = require('mysql').createPool(db);

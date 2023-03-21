@@ -7,6 +7,7 @@ module.exports = defineConfig({
 const target = 'http://127.0.0.1:3000'
 
 module.exports = {
+  
   chainWebpack: config => {
     config.plugins.delete('prefetch')
   },
@@ -22,6 +23,10 @@ module.exports = {
         changeOrigin: true,
       },
       '^/download': {
+        target,
+        changeOrigin: true,
+      },
+      '^/movies': {
         target,
         changeOrigin: true,
       }
