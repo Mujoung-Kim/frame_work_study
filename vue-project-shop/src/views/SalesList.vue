@@ -37,6 +37,9 @@
 </template>
 
 <script>
+/* eslint eqeqeq: 1 */
+/* eslint prefer-const: 'error' */
+
 export default {
   data () {
     return {

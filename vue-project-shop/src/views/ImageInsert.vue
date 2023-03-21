@@ -87,6 +87,9 @@
 </template>
 
 <script>
+/* eslint eqeqeq: 1 */
+/* eslint prefer-const: "error" */
+
 export default {
   data () {
     return {
@@ -117,7 +120,7 @@ export default {
       this.$router.push({ path: '/sales' })
     },
     async getProductDetail () {
-      let productDetail = await this.$api('/api/productDetail', { param: [this.productId] })
+      const productDetail = await this.$api('/api/productDetail', { param: [this.productId] })
       if (productDetail.length > 0) {
         this.productDetail = productDetail[0]
       }

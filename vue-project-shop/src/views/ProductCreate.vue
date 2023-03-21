@@ -83,7 +83,11 @@
     </div>
   </main>
 </template>
+
 <script>
+/* eslint eqeqeq: 1 */
+/* eslint prefer-const: 'error' */
+
 export default {
   data () {
     return {
@@ -125,16 +129,16 @@ export default {
       this.$router.push({ path: '/sales' })
     },
     async getCategoryList () {
-      let categoryList = await this.$api('/api/categoryList', {})
+      const categoryList = await this.$api('/api/categoryList', {})
       this.categoryList = categoryList
 
-      let oCategory = {}
+      const oCategory = {}
       categoryList.forEach(item => {
         oCategory[item.category1] = item.id
       })
 
-      let category1 = []
-      for (let key in oCategory) {
+      const category1 = []
+      for (const key in oCategory) {
         category1.push(key)
       }
 
@@ -145,13 +149,13 @@ export default {
         return c.category1 == category1[0]
       })
 
-      let oCategory2 = {}
+      const oCategory2 = {}
       category2.forEach(item => {
         oCategory2[item.category2] = item.id
       })
 
       category2 = []
-      for (let key in oCategory2) {
+      for (const key in oCategory2) {
         category2.push(key)
       }
       this.category2 = category2
@@ -159,34 +163,34 @@ export default {
 
     changeCategory1 () {
       this.category3 = []
-      let categoryList = this.categoryList.filter(c => {
+      const categoryList = this.categoryList.filter(c => {
         return c.category1 == this.cate1
       })
 
-      let oCategory2 = {}
+      const oCategory2 = {}
       categoryList.forEach(item => {
         oCategory2[item.category2] = item.id
       })
 
-      let category2 = []
-      for (let key in oCategory2) {
+      const category2 = []
+      for (const key in oCategory2) {
         category2.push(key)
       }
 
       this.category2 = category2
     },
     changeCategory2 () {
-      let categoryList = this.categoryList.filter(c => {
+      const categoryList = this.categoryList.filter(c => {
         return (c.category1 == this.cate1 && c.category2 == this.cate2)
       })
 
-      let oCategory3 = {}
+      const oCategory3 = {}
       categoryList.forEach(item => {
         oCategory3[item.category3] = item.id
       })
 
-      let category3 = []
-      for (let key in oCategory3) {
+      const category3 = []
+      for (const key in oCategory3) {
         category3.push(key)
       }
 

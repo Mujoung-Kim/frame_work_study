@@ -81,6 +81,9 @@
 </template>
 
 <script>
+/* eslint eqeqeq: 1 */
+/* eslint prefer-const: 'error' */
+
 export default {
   data () {
     return {
@@ -107,7 +110,7 @@ export default {
       return this.$currencyFormat(value)
     },
     async getProductDetail () {
-      let productDetail = await this.$api('/api/productDetail', { param: [this.productId] })
+      const productDetail = await this.$api('/api/productDetail', { param: [this.productId] })
       if (productDetail.length > 0) {
         this.productDetail = productDetail[0]
         this.totalPrice = this.totalPrice = this.productDetail.product_price * this.total

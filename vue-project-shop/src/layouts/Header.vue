@@ -63,17 +63,6 @@ export default {
       })
     },
 
-    // async login (kakaoAccount) {
-    //   await this.$api('/login', {
-    //     param: [
-    //       { email: kakaoAccount.email, nickname: kakaoAccount.profile.nickname },
-    //       { nickname: kakaoAccount.profile.nickname }
-    //     ]
-    //   })
-    //   console.log(this.$store.commit('user', kakaoAccount))
-    //   this.$store.commit('user', kakaoAccount)
-    // },
-
     kakaoLogout () {
       window.Kakao.Auth.logout((response) => {
         console.log(response)
